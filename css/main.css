@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  background-color: #fff;
   font-family: "Libre Baskerville", serif;
 }
 
@@ -21,7 +20,6 @@ body {
   padding: 0 1rem;
   background-color: #522806;
   border-bottom: .3rem solid #bea59b;
-  color: #fff;
   font-size: 1.25rem;
 }
 
@@ -29,6 +27,7 @@ body {
   display: flex;
   align-items: center;
   font-size: 1.5rem;
+  color: #fff;
 }
 
 .masthead img {
@@ -60,7 +59,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "banner";
-  color: #fff;
   font-size: 1.5rem;
 }
 
@@ -81,21 +79,42 @@ body {
 .banner h2,
 .banner p {
   margin: 0 0 1.5rem;
+  color: #fff;
 }
 
 .banner a {
   display: inline-block;
-  background-color: transparent;
   padding: .5em 1.5em .6em;
-  border: .3rem solid #bea59b;
-  border-radius: 1em;
+  border: .3rem solid #fff;
   color: #fff;
+  border-radius: 1em;
   font-weight: bold;
   text-decoration: none;
+  outline-color: invert;
+}
+
+.nav > ul a:focus {
+  outline-color: #ffc0cb;
+  border-width: 2rem;
+  outline-style: solid;
+}
+
+.banner a:focus {
+  outline-color: #ff0;
+  border-width: 2rem;
+  outline-style: solid;
+  background-color: transparent;
+}
+
+.card a:focus {
+  outline-color: #ff0;
+  border-width: 2rem;
+  outline-style: solid;
 }
 
 .ship {
   padding: 2rem;
+  background-color: #fff;
 }
 
 .card {
